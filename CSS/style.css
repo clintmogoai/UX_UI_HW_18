@@ -1,20 +1,37 @@
-
+body{
+    font-family: 'Poppins', sans-serif;
+}
 /* FONTS H1-H2 BEBAS NEAUVES H3 DOWN POPPINS*/
 h1{
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: ;font-family: 'Bebas Neue', cursive
 }
 h2{
     text-align: center;
+    font-family: 'Bebas Neue', cursive
 }
 h3{
     text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+h4{
+    font-size: 30px ;
+    font-weight: 500;
+}
+h5{
+    font-size: 30px;
+    font-weight: 400px;
 }
 p{
-    text-align: right;
-    justify-content: right;
+    font-size: 24px;
+    font-weight: 400px;
 }
+
 /* HOMEPAGE-HEADER*/
+.topNav{
+    font-family: 'Bebas Neue', cursive;
+}
 .Navigation{
     display: flex;
     vertical-align: top;
@@ -126,8 +143,13 @@ li{
     padding: 3px;
 }
 /* ABOUT ME SECTION*/
-.aboutMe{
+.aboutMe {
     flex-direction: column;
+    grid-template-columns: 30% 70%;
+    grid-area: ;
+}
+.aboutMe p{
+    font: weight 400px; ;
 
 }
 /* MY WORK SECTION*/
