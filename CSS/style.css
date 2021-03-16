@@ -4,34 +4,40 @@ body{
 /* FONTS H1-H2 BEBAS NEAUVES H3 DOWN POPPINS*/
 h1{
     text-align: center;
-    font-family: ;font-family: 'Bebas Neue', cursive
+    font-family: 'Bebas Neue', cursive;
+    font-size: 120px;
 }
 h2{
     text-align: center;
-    font-family: 'Bebas Neue', cursive
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
 }
 h3{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 h4{
     font-size: 30px ;
-    font-weight: 500;
+    font-weight:500;
+    font-family: 'Poppins', sans-serif;
 }
 h5{
     font-size: 30px;
     font-weight: 400px;
+    font-family: 'Poppins', sans-serif;
 }
 p{
-    font-size: 24px;
-    font-weight: 400px;
+    font-size: 20px;
+    font-weight: 300px;
+    font-family: 'Poppins', sans-serif;
+}
+li{
+
 }
 
 /* HOMEPAGE-HEADER*/
-.topNav{
-    font-family: 'Bebas Neue', cursive;
-}
 .Navigation{
     display: flex;
     vertical-align: top;
@@ -89,10 +95,11 @@ p{
     align-items: flex-start;
 }
 #Resume{
-    background-color: #FFE81F;
+    background-color: #F59836;
     color: white;
-    height: 30px;
-    width: 70px;
+    height: 50px;
+    width: 80px;
+    border-style: groove;
 }
 /* HOMEPAGE-FOOTER*/
 .quickLinks{
@@ -117,11 +124,11 @@ p{
     height: 100px;
     color: white;
     justify-content: end;
-    font-family: Poppins;
 }
 li{
     padding: 15px;
     font-size: 16px;
+    font-weight: 500px;
 }
 .copyRight{
     justify-content: center;
@@ -144,12 +151,12 @@ li{
 }
 /* ABOUT ME SECTION*/
 .aboutMe {
-    flex-direction: column;
-    grid-template-columns: 30% 70%;
+    display: flex;
     grid-area: ;
 }
 .aboutMe p{
-    font: weight 400px; ;
+    font: weight 300px;
+    font-size: 20px;
 
 }
 /* MY WORK SECTION*/
@@ -157,7 +164,8 @@ li{
 .myWork{
     display: grid;
     grid-template-columns: 1fr;
-    position: relative;
+}
+workGrid{
 }
 
 #nfpwrd{
@@ -169,9 +177,11 @@ li{
     align-items: flex-start;
     max-width:none;
     position: relative;
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
 }
+
 #houseMate{
     margin: auto;
     padding: 20px;
@@ -181,7 +191,9 @@ li{
     align-items: flex-start;
     max-width: none;
     position: relative;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
 }
 #recomondo{
     margin: auto;
@@ -192,11 +204,19 @@ li{
     align-items: flex-start;
     max-width: none;
     position: relative;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
 }
-.bushFireWRD{
-    position: relative;
-}
+#seeMore{
+    background-color: #F59836;
+    color: white;
+    height: 50px;
+    width: 80px;
+    border-style: groove;
+}    
+
 @media only screen and {max: width 600px;{
     . {
         width:  ;
