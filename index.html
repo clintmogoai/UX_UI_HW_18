@@ -3,8 +3,7 @@
     <head>
         <link rel ="stylesheet" href="../UX_UI_HW_18/CSS/style.css"type="text/css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,200s;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Clint Mogoai</title>
     </head>
     <body>
@@ -15,14 +14,14 @@
                     <img class="logo" src="../UX_UI_HW_18/Images/Logo transparent.png" alt="Logo CMXD">
                 <nav id="primaryNav">
                     <ul class="topNav">
-                        <li>About Me </li>
-                        <li> Portfolio </li>
-                        <li> Resume </li>
-                        <li> Contact </li> 
+                        <li id="about" > About Me </li>
+                        <li id="Portfolio"> Portfolio</li> 
+                        <li id="resume"> Resume </li> 
+                        <li id="Contact"> Contact</li> 
                     </ul>
                 </nav>
             </div>    
-                <img src="../UX_UI_HW_18/Images/HERO IMAGE.png" alt="Hero Image">
+                <div><img src="../UX_UI_HW_18/Images/hero.png" alt="Hero Image" ></div>
                 <div class="heroContent">
                     <h4>User experience designer - Constantly learning, creating and developing solutions with a focus on community </h4>
                     <button id="Resume"> Resume</button>
@@ -39,7 +38,7 @@
             <img class="profileImage" src="../UX_UI_HW_18/Images/Self-portrait.png" alt="profile Image" height="380px" width="305px">
         </div>
         <div class="aboutText">
-            <div><h3>Hi Im Clint</h3> </div> 
+            <div><h3>Hi, I'm Clint</h3> </div> 
             <div><p> I'm a user experience designer with a hunger to learn and evolve my visual design skills. I enjoy researching and brainstorming to find the best possible creative solutions, with a focus on creating engaging UX copy.</p>
            <p> I have a curiosity for the human thought process and creative problem solving. Coming from a diverse background of experience from the music and customer service industries many of the skills learnt have transffered into my UX design process.  Having developed an innate ability to listen and emphasize with people, I am able to understand and explore possible solutions through creative thinking. </p></div>
         </div>
@@ -47,36 +46,48 @@
     <hr class="solid"></hr>
      <!--My WORKS SECTION-->
     <section class="myWork">
-        <div><h2>Recent Projects</h2></div>
+        <div id="recentWork"><h2>Recent Projects</h2></div>
         <div class="workGrid">
             <div id="nfpwrd">
-                <h4> Non-profit WRD</h4>
                 <div>
-                    <img class="bushFireWRD" src="../UX_UI_HW_18/Images/bushfire mockup.png" alt="bushfire wrd case study" height="360px" width="450px">
+                    <img class="bushFireWRD" src="../UX_UI_HW_18/Images/bushfire mockup.png" alt="bushfire wrd case study" height="360px" width="500px">
                 </div>
-                <p>A team web redesign challenge focused on streamlining the registration and donation processes for the tradies for the bushfire rebuild website.</p>
-                <button id="seeMore"> See More </button>
+                <div id="bushCont"><h4> Non-profit WRD</h4> <p>A team web redesign challenge focused on streamlining the registration and donation processes for the tradies for the bushfire rebuild website.</p>
+                    <button id="seeMore"> See More </button></div>                
             </div> 
             <div id="houseMate">
-                <h4> HouseMate - Mobile app design </h4>
-                <div>
-                    <img class="houseMateimg" src="../UX_UI_HW_18/Images/HouseMate mockup.png" alt="HouseMate case study" height="360px" width="450px">
-                </div>
-                <p>HouseMate is an app for people  in share houses, with the goal of simplifying household processes and reducing interpersonal conflict within share houses.</p>
-                <button id="seeMore"> See More </button>
-               
+                <div><h4> HouseMate - Mobile app design </h4><p>HouseMate is an app for people  in share houses, with the goal of simplifying household processes and reducing interpersonal conflict within share houses.</p>
+                    <button id="seeMore"> See More </button></div>
+                    <div>
+                        <img class="houseMateimg" src="../UX_UI_HW_18/Images/HouseMate mockup.png" alt="HouseMate case study" height="360px" width="500px">
+                    </div>
             </div> 
             <div id="recomondo">
-                <div><h4> Recomondo - Mobile app design </h4></div>
                 <div>
-                    <img class="recomondoImg" src="../UX_UI_HW_18/Images/Frame 1 (4).png" alt="Recomondo case study" height="360px" width="450px">
+                    <img class="recomondoImg" src="../UX_UI_HW_18/Images/Frame 1 (4).png" alt="Recomondo case study" height="360px" width="550px">
                 </div>
-                <div><p>A platform for friends and solo travellers to share personal travel recommendations along with cultural do’s and dont’s.</p></div>
-                <div><button id="seeMore"> See More </button> </div>
-                
+                <div><h4> Recomondo - Mobile app design </h4><p>A platform for friends and solo travellers to share personal travel recommendations along with cultural do’s and dont’s.</p>
+                    <button id="seeMore"> See More </button> </div>
             </div> 
+            <div><h3>See all recent projects</h3></div>
         </div>
-        <h3>See all recent projects</h3>
+    </section>
+    <section>
+        <div class="contactSection">
+        <ul class="linkUp">
+            <div><h2>Link Up</h2></div> 
+            <div id="soclink"><li><img src="../UX_UI_HW_18/Images/linkedIn.png" height="30px" width="30px" alt="linkedIn icon"></li>
+                <li><img src="../UX_UI_HW_18/Images/Facebook.png" height="30px" width="30px" alt=fb icon"></li>
+                <li><img src="../UX_UI_HW_18/Images/Instagram.png" height="30px" width="30px" alt=insta icon"></li>
+                <li><img src="../UX_UI_HW_18/Images/Vector.png" height="30px" width="40px" alt=soundCloud icon"></li></div>
+        </ul>
+        <ul class="letsChat">
+            <div><h2>Let's Chat</h2></div>
+            <div id="conDeets">
+                 <div><li>email: clintmogoai@gmail.com</li></div>
+                 <div><li>ph: 0407 553 035</li></div></div>
+        </ul>
+        </div>
     </section>
  <!--FOOTER SECTION-->   
     <footer>
@@ -93,15 +104,10 @@
               <li><img src="../UX_UI_HW_18/Images/Instagram.png" height="30px" width="30px" alt=insta icon"></li>
               <li><img src="../UX_UI_HW_18/Images/Vector.png" height="30px" width="40px" alt=soundCloud icon"></li>
           </ul>
-        </div>
-        <div class="copyRight">
+          <div class="copyRight">
             <p>copyright 2021 designed by Clint Mogoai</p> 
         </div>
+        </div>
     </footer>
-    
-     
-
-
-    
     </body>
 </html>

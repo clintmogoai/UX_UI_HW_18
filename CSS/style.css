@@ -11,17 +11,21 @@ h2{
     text-align: center;
     font-family: 'Bebas Neue', cursive;
     font-size: 60px;
+    color: #B7B0E8;
 }
 h3{
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    color: #B7B0E8;
+    text-align: center;
 }
 h4{
     font-size: 30px ;
     font-weight:500;
     font-family: 'Poppins', sans-serif;
+    text-align: left;
 }
 h5{
     font-size: 30px;
@@ -32,9 +36,6 @@ p{
     font-size: 20px;
     font-weight: 300px;
     font-family: 'Poppins', sans-serif;
-}
-li{
-
 }
 
 /* HOMEPAGE-HEADER*/
@@ -94,36 +95,49 @@ li{
     padding: 20px;
     align-items: flex-start;
 }
+.heroContent h4{
+    text-align: right;
+    
+}
 #Resume{
     background-color: #F59836;
     color: white;
     height: 50px;
-    width: 80px;
+    width: 110px;
     border-style: groove;
+    border-radius: 10px;
+    font-size: 80%;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
 }
 /* HOMEPAGE-FOOTER*/
 .quickLinks{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start; 
     list-style: none; 
     text-align: center;
     align-items: center;
     float: left;
+    grid-area: quickLinks;
 }
 .socials{
     display: flex;
     flex-direction: row;
     list-style: none; 
-    justify-content: flex-end;
-    align-items: center;
-    float: right;
+    align-items: right;
 }
 .footer{
     background-color: #373738;
     height: 100px;
     color: white;
-    justify-content: end;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "quickLinks" "socials"
+    "copyRight" "copyRight";
 }
 li{
     padding: 15px;
@@ -134,10 +148,9 @@ li{
     justify-content: center;
     background-color: black;
     color: white;
-    height: 30px;
     text-align: center;
- 
-    position: relative;
+    grid-area: copyRight;
+    display: flex;
 }
 /* HOMEPAGE-BODYCONTENT*/
 .solid{
@@ -147,12 +160,13 @@ li{
 .flexContainer{
     display: flex;
     text-align: center;
-    padding: 3px;
+    padding: 20px;
 }
 /* ABOUT ME SECTION*/
 .aboutMe {
     display: flex;
-    grid-area: ;
+    align-items: center;
+
 }
 .aboutMe p{
     font: weight 300px;
@@ -161,65 +175,181 @@ li{
 }
 /* MY WORK SECTION*/
 
+#recentWork{
+    margin-top: -40px;
+    margin-bottom: -70px;
+}
+
 .myWork{
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-areas: "nfpwrd" "houseMate" "recomondo";
+    
 }
-workGrid{
+.workGrid{
+    display: grid;
+    grid-template-areas: "nfpwrd" "houseMate" "recomondo";
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
+    padding: 20px;
 }
 
 #nfpwrd{
     margin: auto;
     padding: 20px;
     background-color: rgba(183, 176, 232, .30);
-    margin-top: 30px;
-    padding: 20px;
     align-items: flex-start;
     max-width:none;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 180px 180px;
+    column-gap: 20px;
 }
+.bushFireWRD{
+    align-items: center;
+    justify-content: flex-end;
+    max-width: none;
+}
+#bushCont{
+    align-items: flex-end;
+}
+
 
 #houseMate{
     margin: auto;
     padding: 20px;
     background-color: rgba(252, 201, 78, .30);
     margin-top: 30px;
-    padding: 20px;
     align-items: flex-start;
     max-width: none;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 180px 180px;
+    column-gap: 20px;
 }
 #recomondo{
     margin: auto;
     padding: 20px;
     background-color: rgba(255, 232, 31, .30);
     margin-top: 30px;
-    padding: 20px;
     align-items: flex-start;
     max-width: none;
     position: relative;
-    flex-direction: row;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 180px 180px;
+    grid-template-areas: 
+    "recomondoImg"
+    "recomondoImg seeMore" ;
+    column-gap: 20px;
+}
+/* CONTECT US SECTION*/
+.contactSection {
+    display: grid;
+    background-color: rgba(255, 232, 31, .40);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    grid-template-areas: 
+    "linkUp letsChat"
+    "soclink conDeets" ;
+    align-items: center;
+    justify-content: center;
+    max-height: 200px;
+}
+.linkUp{
+    display: grid;
+    list-style: none; 
+    align-items: center;
+    grid-area: "linkUp";
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+}
+.letsChat{
+    display: grid;
+    list-style: none; 
+    align-items: center;
+    grid-area: "letsChat";
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#soclink{
+    display: flex;
+    grid-area: soclink;
+    flex-direction: row;
+    justify-content: center ;
+}
+#conDeets{
+    display: flex;
+    grid-area: conDeets;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 #seeMore{
     background-color: #F59836;
     color: white;
     height: 50px;
-    width: 80px;
+    width: 110px;
     border-style: groove;
+    border-radius: 10px;
+    font-size: 120%;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }    
 
-@media only screen and {max: width 600px;{
-    . {
-        width:  ;
+/* MEDIA QUERY MOBILE*/
+@media only screen and (max-width: 600px){
+    .myWork{
+        display: flex;
     }
-}
+    .myWork p{
+        font-size: 15px;
+    }
+    .workGrid p{
+        font-size: 15px;
+
+    }
+    #nfpwrd{
+
+
+    }
+    .bushFireWRD{
+        align-items: center;
+        justify-content: flex-end;
+        max-width: none;
+    }
+    #bushCont{
+        align-items: flex-end;
+    }
+    #houseMate{
+
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px 180px;
+        column-gap: 20px;
+    }
+    #recomondo{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px 180px;
+        grid-template-areas: 
+        "recomondoImg"
+        "recomondoImg seeMore" ;
+        column-gap: 20px;
+        font-size: 15px;
+    }
+
+    
 
